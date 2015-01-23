@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .swp
+*.swp
 .DS_Store
 :w
 :q
