@@ -1,0 +1,13 @@
+# Site settings
+title: RendrJS
+description: >
+  Render your Backbone.js apps on the client and the server, using Node.js.
+baseurl: ""
+url: "http://rendrjs.github.io"
+twitter_username: rendrjs
+github_username: rendrjs 
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments 
+
