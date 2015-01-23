@@ -10,3 +10,8 @@ github_username: rendrjs
 # Build settings
 markdown: redcarpet
 highlighter: pygments 
+
+collections:
+  model:
+    header: ""
+    example: ""
