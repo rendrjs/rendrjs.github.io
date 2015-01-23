@@ -1,6 +1,6 @@
 ---
 layout: content
-title: "Rendr by rendrjs"
+title: "RendrJS"
 ---
 
 <img class="top-img" src="http://cl.ly/image/272q3f1u313b/Rendr-logotype.png" width="395" height="100">
