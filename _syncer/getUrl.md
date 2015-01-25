@@ -1,6 +1,6 @@
 ---
 header: getUrl
-example: Model.getUrl(url, clientPrefix, params)
+example: Syncer.getUrl(url, clientPrefix, params)
 ---
 
 The method is expecting a url, the value set on a [model](/model#url) or [collection](/collection#url) which can be created with the url or urlRoot attribtues.
