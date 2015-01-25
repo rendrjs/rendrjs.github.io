@@ -1,7 +1,23 @@
 <div class="navigation">
-  <h3>
-    <a href="/#getting-started">Getting Started</a>
-  </h3>
+  <h3><a href="/#">Rendr</a></h3>
+
+  <h3><a href="/#getting-started">Getting Started</a></h3>
+  <h3><a href="/#premise">The Premise</a></h3>
+  <h3><a href="/#goals">Goals</a></h3>
+  <h3><a href="/#contributing">Contributing</a></h3>
+
+
+  <!-- TODO - make the navigation even easier by looping each collection
+  {% for c in site.collections%}
+    <h3>
+      <a href="/{{c.name}}">{{c.title}}</a>
+    </h3>
+
+    {% for doc in c.collection %}
+      <li><a href="/model#{{doc.header}}">{{doc.header}}</a></li>
+    {% endfor %}
+  {% endfor %}
+  -->
 
   <h3>
     <a href="/model">Model</a>
@@ -10,6 +26,16 @@
   <ul>
     {% for doc in site.model %}
       <li><a href="/model#{{doc.header}}">{{doc.header}}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h3>
+    <a href="/syncer">Syncer</a>
+  </h3>
+
+  <ul>
+    {% for doc in site.syncer %}
+      <li><a href="/syncer#{{doc.header}}">{{doc.header}}</a></li>
     {% endfor %}
   </ul>
 

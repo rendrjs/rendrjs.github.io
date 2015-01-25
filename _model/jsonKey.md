@@ -7,7 +7,6 @@ example: Model.jsonKey
 
 ```js
 Model.jsonKey = 'user';
-
 // expected data format from the API
 // this will then be parsed and set onto the model
 {

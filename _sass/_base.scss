@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
@@ -130,9 +130,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 code {
