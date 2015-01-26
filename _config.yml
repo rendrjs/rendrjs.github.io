@@ -18,3 +18,6 @@ collections:
   syncer:
     header: ""
     example: ""
+  collection:
+    header: ""
+    example: ""
