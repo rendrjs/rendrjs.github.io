@@ -12,16 +12,6 @@ title: "RendrJS"
 
 Rendr is a small library that allows you to run your [Backbone.js](http://backbonejs.org/) apps seamlessly on both the client and the server. Allow your web server to serve fully-formed HTML pages to any deep link of your app, while preserving the snappy feel of a traditional Backbone.js client-side MVC app.
 
-## Reporting problems and getting help
-
-Please use the [issue tracker][issues] to report bugs. For support with using
-rendr, try asking in the [Google group][ggroup] or join #rendr on
-irc.freenode.org.
-
-[ggroup]: https://groups.google.com/forum/#!forum/rendrjs
-[issues]: https://github.com/rendrjs/rendr/issues
-
-
 <h3 id="getting-started">Getting Started</h3>
 
 To see how to use Rendr to build a simple web app, check out the [examples](https://github.com/rendrjs/rendr-examples) repository for a number of different ways to set up a Rendr app.
@@ -62,6 +52,15 @@ Rendr uses the native ECMAScript 5 methods `Array.prototype.map`, `Function.prot
 We'd love to see what the community can come up with! There are no doubt a number of developers who are tackling this same problem, and we can learn from each other. If you have a bug fix or feature proposal, submit a pull request with a clear description of the change, plus tests.
 
 Rendr was originally developed by [@braitz](https://github.com/braitz) and [@spikebrehm](https://github.com/spikebrehm), and now has a healthy list of [contributors](https://github.com/rendrjs/rendr/graphs/contributors).
+
+## Reporting problems and getting help
+
+Please use the [issue tracker][issues] to report bugs. For support with using
+rendr, try asking in the [Google group][ggroup] or join #rendr on
+irc.freenode.org.
+
+[ggroup]: https://groups.google.com/forum/#!forum/rendrjs
+[issues]: https://github.com/rendrjs/rendr/issues
 
 ## License
 
