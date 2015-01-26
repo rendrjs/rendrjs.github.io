@@ -8,7 +8,6 @@ html, body {
   height: 100%
 }
 
-
 /**
  * Reset some basic elements
  */
@@ -18,8 +17,6 @@ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
-
-
 
 /**
  * Basic styling
@@ -34,8 +31,6 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -46,8 +41,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -55,8 +48,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -68,8 +59,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -85,16 +74,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
-
-
 
 /**
  * Links
@@ -113,8 +98,6 @@ a {
     }
 }
 
-
-
 /**
  * Blockquotes
  */
@@ -130,8 +113,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Code formatting
@@ -152,10 +133,17 @@ pre {
     padding: 8px 12px;
     overflow-x: scroll;
 
-    > code {
+    code {
         border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p:empty {
+      display: none;
     }
 }
 
