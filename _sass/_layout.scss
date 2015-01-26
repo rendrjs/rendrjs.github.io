@@ -28,15 +28,16 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: 20px 0;
-  height: 40px;
+  height: 90px;
   bottom: 0;
   background-color: #f1f4f4;
   margin-left: 230px;
 
   > .wrapper {
     margin: 0;
-    width: 1000px;
-    padding-left: 30px;
+    max-width: 1000px;
+    padding-left: 60px;
+    padding-right: 0;
   }
 }
 
@@ -55,6 +56,11 @@
   font-size: 15px;
   color: $grey-color;
   @extend %clearfix;
+
+  :first-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
 }
 
 .footer-col {
@@ -71,6 +77,7 @@
 .footer-col-3 {
   float: right;
   width: 290px;
+  margin-right: 0;
 }
 
 @include media-query($on-laptop) {
@@ -99,8 +106,10 @@
  * Page content
  */
 .page-content {
-  padding: 30px 60px;
+  padding: 30px 60px 120px 60px;
   margin-left: 230px;
+  margin-bottom: -90px;
+  min-height: 100%;
 
   .top-img {
     margin-bottom: 20px
@@ -182,7 +191,7 @@
   background-color: #f1f4f4;
   padding: 30px;
 
-  width: 170px;
+  width: 230px;
   box-shadow: 0 0 20px #ccc;
 
   position: fixed;
