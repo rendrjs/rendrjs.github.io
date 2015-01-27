@@ -9,13 +9,4 @@ The syncer methods are mixins used in the [**models**](/model) and [**collection
 
 The most important thing to note about the syncer methods and attributes is since they are mixed into models and collections, all of them are available on both models and collections.
 
-{% for doc in site.syncer %}
-  <h2 id="{{doc.header}}">
-    <a href="#{{doc.header}}">{{ doc.header }}</a>
-    <span>{{ doc.example }}</span>
-  </h2>
-
-  <hr />
-  {{doc.content}}
-{% endfor %}
-
+{% include pageDoc.html name="syncer" %}

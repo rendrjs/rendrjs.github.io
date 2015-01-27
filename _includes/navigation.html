@@ -7,46 +7,9 @@
   <h3><a href="/#contributing">Contributing</a></h3>
 
 
-  <!-- TODO - make the navigation even easier by looping each collection
-  {% for c in site.collections%}
-    <h3>
-      <a href="/{{c.name}}">{{c.title}}</a>
-    </h3>
-
-    {% for doc in c.collection %}
-      <li><a href="/model#{{doc.header}}">{{doc.header}}</a></li>
-    {% endfor %}
-  {% endfor %}
-  -->
-
-  <h3>
-    <a href="/model">Model</a>
-  </h3>
-
-  <ul>
-    {% for doc in site.model %}
-      <li><a href="/model#{{doc.header}}">{{doc.header}}</a></li>
-    {% endfor %}
-  </ul>
-
-  <h3>
-    <a href="/collection">Collection</a>
-  </h3>
-
-  <ul>
-    {% for doc in site.collection %}
-      <li><a href="/collection#{{doc.header}}">{{doc.header}}</a></li>
-    {% endfor %}
-  </ul>
-
-  <h3>
-    <a href="/syncer">Syncer</a>
-  </h3>
-  <ul>
-    {% for doc in site.syncer %}
-      <li><a href="/syncer#{{doc.header}}">{{doc.header}}</a></li>
-    {% endfor %}
-  </ul>
+  {% include navItem.html name="model" title="Model" %}
+  {% include navItem.html name="collection" title="Collection" %}
+  {% include navItem.html name="syncer" title="Syncer" %}
 
   <h3><a href="/#examples">Examples</a></h3>
   <ul>

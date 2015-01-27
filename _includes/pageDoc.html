@@ -1,0 +1,10 @@
+{% for doc in site[include.name] %}
+  <h2 id="{{doc.header}}">
+    <a href="#{{doc.header}}">{{ doc.header }}</a>
+    <span>{{ doc.example }}</span>
+  </h2>
+
+  <hr />
+  {{ doc.content }}
+{% endfor %}
+

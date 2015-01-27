@@ -13,11 +13,10 @@ highlighter: pygments
 
 collections:
   model:
-    header: ""
-    example: ""
-  syncer:
-    header: ""
-    example: ""
+    title: "Model"
   collection:
-    header: ""
-    example: ""
+    title: "Collection"
+  view:
+    title: "View"
+  syncer:
+    title: "Syncer"

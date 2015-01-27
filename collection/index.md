@@ -9,13 +9,4 @@ Like in Backbone, collections are ordered sets of models.  You can use collectio
 
 Note, all functions in the [Backbone.Collection](http://backbonejs.org#Collection) work, so make sure to checkout their documentation to see _all_ of the neat features you can do with this object.
 
-{% for doc in site.collection %}
-  <h2 id="{{doc.header}}">
-    <a href="#{{doc.header}}">{{ doc.header }}</a>
-    <span>{{ doc.example }}</span>
-  </h2>
-
-  <hr />
-  {{doc.content}}
-{% endfor %}
-
+{% include pageDoc.html name="collection" %}
