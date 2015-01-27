@@ -10,10 +10,10 @@ Rendr models are extenions on [Backbone Models](http://backbonejs.org#Model).  T
 The model also mixins the **[syncer](/syncer)** to encapsulate the logic for fetching data from an API on the client or the server.
 
 {% for doc in site.model %}
-  <h3 id="{{doc.header}}">
+  <h2 id="{{doc.header}}">
     <a href="#{{doc.header}}">{{ doc.header }}</a>
     <span>{{ doc.example }}</span>
-  </h3>
+  </h2>
 
   <hr />
   {{doc.content}}
