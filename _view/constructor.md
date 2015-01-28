@@ -9,4 +9,4 @@ The constructor will also intelligently retrieve [model](/model) and [collection
 
 The view constructor can have additional intialization information set by adding an `initialize` function.  This is the same pattern developed in [Backbone's initialization](http://backbonejs.org/#View-constructor).
 
-Another special options is the `template_name`.  This allows a hook in point to give a view a different template, than the default of the view's [name](#name).
+Another special option is `template_name`.  This allows a point to hook in at to give a view a different template, by default this is `undefined`.
