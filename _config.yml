@@ -20,3 +20,7 @@ collections:
     title: "View"
   syncer:
     title: "Syncer"
+  model-store:
+    title: "Model Store"
+  collection-store:
+    title: "Collection Store"
