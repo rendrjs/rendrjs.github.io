@@ -35,9 +35,8 @@
 
   > .wrapper {
     margin: 0;
-    max-width: 1000px;
-    padding-left: 60px;
-    padding-right: 0;
+    max-width: 1120px;
+    padding: 0 60px;
   }
 }
 
@@ -99,6 +98,20 @@
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
+
+}
+
+@include media-query(800px) {
+  .site-footer {
+    height: 140px;
+
+    .footer-col-3 {
+      float: none;
+      margin: 0;
+      padding: 10px 0 0 0;
+      clear: both;
+    }
+  }
 }
 
 
@@ -112,7 +125,9 @@
   min-height: 100%;
 
   .top-img {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    width: 395px;
+    height: auto;
   }
 }
 
