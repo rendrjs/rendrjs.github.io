@@ -18,12 +18,16 @@ collections:
     title: "Model"
   collection:
     title: "Collection"
-  controller:
-    title: "Controller"
   view:
     title: "View"
+  controller:
+    title: "Controller"
+  router:
+    title: "Router"
   syncer:
     title: "Syncer"
+  fetcher:
+    title: "Fetcher"
   model-store:
     title: "Model Store"
   collection-store:
