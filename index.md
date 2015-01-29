@@ -53,7 +53,7 @@ Rendr uses the native ECMAScript 5 methods `Array.prototype.map`, `Function.prot
 
 <h2 id="contributing">Contributing</h2>
 
-We'd love to see what the community can come up with! There are no doubt a number of developers who are tackling this same problem, and we can learn from each other. If you have a bug fix or feature proposal, submit a pull request with a clear description of the change, plus tests.
+We'd love to see what the community can come up with! If you're stuck on a problem, chances are many other developers are tackling the same problem, and we can learn from each other. If you have a bug fix or feature proposal, submit a pull request with a clear description of the change, plus tests.
 
 Rendr was originally developed by [@braitz](https://github.com/braitz) and [@spikebrehm](https://github.com/spikebrehm), and now has a healthy list of [contributors](https://github.com/rendrjs/rendr/graphs/contributors).
 
