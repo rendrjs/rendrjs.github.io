@@ -3,4 +3,4 @@ header: parse
 example: Collection.parse([response], [modifyInstance])
 ---
 
-Parse the data being returned from an API.  By setting a [jsonKey](#jsonKey) attribute it will parse and return the object as you would expect without having to override the function.  This will call the [parseModels](#parseModels) method by default.
+Parse the data that is returned from an API.  If you set a [jsonKey](#jsonKey) attribute on the collection, it will parse the objects as you would expect without having to override this function.  This calls the [parseModels](#parseModels) method by default.
