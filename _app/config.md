@@ -1,5 +1,6 @@
 ---
 header: config
+example: 
 ---
 
 The options that can be passed into the Rendr App object.
@@ -13,7 +14,7 @@ The options that can be passed into the Rendr App object.
 - **errorHandler** _optional_ Callback for [Express.js errors](http://expressjs.com/guide.html#error-handling)
 - **notFoundHandler** _optional_ Callback for [Express.js not found errors](http://expressjs.com/guide.html#error-handling)
 - **viewEngine** _optional_ Provides a way to set a custom [Express.js ViewEngine](http://expressjs.com/api.html#app.engine)
-- **viewsPath** _optional_ Override where the veiws are stored. This path is relative to `entryPath`. Default value is: `app/views`
+- **viewsPath** _optional_ Override where the views are stored. This path is relative to `entryPath`. Default value is: `app/views`
 
 Example configuration:
 

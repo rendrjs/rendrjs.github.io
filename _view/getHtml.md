@@ -3,7 +3,7 @@ header: getHtml
 example: View.getHtml()
 ---
 
-Returns the HTML for a View, including the wrapper defined in the view.  This invokes [getInnerHtml](#getInnerHtml) then builds a wrapper element using the attribtues from [getAttributes](#getAttributes).
+Returns the HTML for a View, including the wrapper defined in the view.  This invokes [getInnerHtml](#getInnerHtml) then builds a wrapper element using the attributes from [getAttributes](#getAttributes).
 
 ```js
 var View = RendrView.extend({

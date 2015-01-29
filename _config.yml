@@ -18,6 +18,8 @@ collections:
     title: "Model"
   collection:
     title: "Collection"
+  controller:
+    title: "Controller"
   view:
     title: "View"
   syncer:

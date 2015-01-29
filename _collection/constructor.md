@@ -3,7 +3,7 @@ header: constructor
 example: new Collection([models], [options])
 ---
 
-The constructor creates a new instance of a Collection.  For creating a customized constructore, then create an `initialize` function, which is called by the constructor.
+The constructor creates a new instance of a Collection.  For creating a customized constructor, then create an `initialize` function, which is called by the constructor.
 
 The models parameter is an array of [*Models*](/model).
 
