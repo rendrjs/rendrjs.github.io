@@ -20,12 +20,12 @@ Check out the [blog post](http://nerds.airbnb.com/weve-launched-our-first-nodejs
 
 <h2 id="premise">The Premise</h2>
 
-Our hypothesis is that there has to be a better way to build rich web apps today. In the last few years, we've seen more of the application moved to the client-side, with JavaScript representations of views, templates, and models. This can result in interactive, native-style apps, but it also poses challenges. SEO, performance, and maintainability become issues with splitting up your app into two distinct codebases, often in different languages.
+We believe there has to be a better way to build rich web apps today. In the last few years, we've seen more of the application moved to the client-side, with JavaScript representations of views, templates, and models. This enables us to build interactive, native-style single-page apps, but splitting your app into two distinct codebases (often using different languages for client and server) also creates challenges for performance, maintainability, and SEO.
 
 
 <h2 id="goals">The Goals</h2>
 
-Rendr is intended to be a building block along the way to this envisionsed future of web apps that can be run on either side of the wire according to the needs of your application.
+Rendr is intended to be a building block along the way to this envisioned future of web apps that can be run on either side of the wire according to the needs of your application.
 
 Some specific design goals:
 
@@ -43,7 +43,7 @@ Some specific design goals:
 
 Rather than owning your entire Express app, Rendr simply provides some useful middleware that you can mount into your existing Express app.
 
-### Asset Bunding
+### Asset Bundling
 
 Asset bundling and serving are outside of Rendr's scope. However, it does have some specific requirements for JavaScript packaging to support modules that are accessible in the CommonJS style on both the client and server. The example app uses Stitch for this, though you could also do this with other tools, such as Browserify.
 
@@ -53,7 +53,7 @@ Rendr uses the native ECMAScript 5 methods `Array.prototype.map`, `Function.prot
 
 <h2 id="contributing">Contributing</h2>
 
-We'd love to see what the community can come up with! There are no doubt a number of developers who are tackling this same problem, and we can learn from each other. If you have a bug fix or feature proposal, submit a pull request with a clear description of the change, plus tests.
+We'd love to see what the community can come up with! If you're stuck on a problem, chances are many other developers are tackling the same problem, and we can learn from each other. If you have a bug fix or feature proposal, submit a pull request with a clear description of the change, plus tests.
 
 Rendr was originally developed by [@braitz](https://github.com/braitz) and [@spikebrehm](https://github.com/spikebrehm), and now has a healthy list of [contributors](https://github.com/rendrjs/rendr/graphs/contributors).
 
