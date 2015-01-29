@@ -5,8 +5,8 @@ title: "Collection - RendrJS"
 
 # Collection
 
-Like in Backbone, collections are ordered sets of models.  You can use collections to delegate events for a group of models, listen to adding or removing of models from the set, and sync those sets with a server.  The major additions Rendr provides to Backbone is the [Collection Store](/collection-store) and the ability to sync the collection in the same fashion on client or server.
+Collections are ordered sets of models.  As in Backbone, you can use collections to delegate events for a group of models, listen to adding or removing of models from the set, and sync those sets with a server.  Rendr provides two main additions over Backbone: the [Collection Store](/collection-store) and the ability to sync the collection in the same fashion on client or server.
 
-Note that all functions in the [Backbone.Collection](http://backbonejs.org#Collection) work, so make sure to check out their documentation to see _all_ of the neat features you can do with this object.
+See [Backbone.Collection](http://backbonejs.org#Collection) for _all_ of the neat functions this object ships with.
 
 {% include pageDoc.html name="collection" %}
