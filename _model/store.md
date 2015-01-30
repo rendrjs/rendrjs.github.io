@@ -3,8 +3,8 @@ header: store
 example: Model.store()
 ---
 
-This will save the data to the model store.  This data is retrieved when the views are being constructed.  This saves on requests as well, as the fetch function will check the store before creating the AJAX request to the server.
+Saves the data to the model store.  The fetch function will retrieve data from the store first when the views are being constructed, thus reducing the number of requests to the server.
 
-Store also has a default trigger setup on the `change` event of the `idAttribute`.  This means, if you modify the ID it will re-store the data.  Since the store is referencing the instance of the model, you *don't* need to setup a change event on the entire model, as it will get those changes automatically.
+By default, `store` is triggered on the `change` event of the model's `idAttribute`.  This means that modifying the ID will automatically store the data again, so you *don't* need to set up a `change` event on the entire model.
 
-This is function invokes the [ModelStore.set](/model-store#set) function with the model.
+This function invokes the [ModelStore.set](/model-store#set) function with the model.

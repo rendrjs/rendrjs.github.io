@@ -5,8 +5,8 @@ title: "Model - RendrJS"
 
 # Model
 
-Rendr models are extensions of [Backbone Models](http://backbonejs.org#Model).  They are configured to run on the client and server, however some of the functionality works a little different between the two.  Ideally in a project you don't need to worry about these changes, but here's some documentation on how they function and some of the differences between the two states that they'll be running in.
+Rendr models extend [Backbone Models](http://backbonejs.org#Model).  They are configured to run on the client and server, though some of the functionality works a little different between the two.  You won't normally need to worry about these differences in your project.
 
-The model also mixes-in the **[syncer](/syncer)** to encapsulate the logic for fetching data from an API on the client or the server.
+The model also mixes-in the **[syncer](/syncer)** functionality for fetching data from an API on the client or the server.
 
 {% include pageDoc.html name="model" %}

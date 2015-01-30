@@ -3,9 +3,9 @@ header: constructor
 example: new Collection([models], [options])
 ---
 
-The constructor creates a new instance of a Collection.  For creating a customized constructor, then create an `initialize` function, which is called by the constructor.
+The constructor creates a new instance of a Collection.  To customize your constructor, create an `initialize` function, which will be called by the constructor.
 
-The models parameter is an array of [*Models*](/model).
+The `models` parameter is an array of [*Models*](/model).
 
-The options are the same as the standard [Backbone.Collection](http://backbonejs.org#Collection-constructor), but in this case we are expecting an `app` attribute to be attached to the options.  The `app` attribute is the instance of the [Rendr App](/app) object.  This is required for syncing data to the API.
+The options are the same as the standard [Backbone.Collection](http://backbonejs.org#Collection-constructor), but in Rendr it also expects an `app` object.  The [Rendr App](/app) instance must be passed, in order to sync data to the API.
 

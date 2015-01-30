@@ -3,7 +3,7 @@ header: jsonKey
 example: Model.jsonKey
 ---
 
-**jsonKey** is the JSON root of the response from the API. This will automatically [parse](#parse) an API response with a root key.
+**jsonKey** is the JSON root of the response from the API.  An API response with a root key will automatically be [parsed](#parse).
 
 ```js
 Model.jsonKey = 'user';
