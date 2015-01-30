@@ -7,5 +7,5 @@ This will interpolate the url strings, for instance if the url you have set on a
 
 This function makes it so we can easily change the url parameters based on attributes in the model / collection.
 
-If the this is interpolating a collection, it will check the options of the collection for the data to interpolate.
+If interpolating a collection, it will check the options of the collection for the data to interpolate.
 
