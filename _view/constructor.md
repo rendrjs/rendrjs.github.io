@@ -1,6 +1,6 @@
 ---
 header: constructor
-example: new View(options)
+example: new View([options])
 ---
 
 Creates a new instance of the View object.  A required option is [app](/app) which is used in many of the helper functions throughout the view, and entire application.
