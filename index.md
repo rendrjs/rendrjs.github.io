@@ -3,7 +3,9 @@ layout: content
 title: "RendrJS"
 ---
 
-<img class="top-img" src="http://cl.ly/image/272q3f1u313b/Rendr-logotype.png" width="395" height="100">
+<a href="http://github.com/rendrjs/rendr">
+  <img class="top-img" src="http://cl.ly/image/272q3f1u313b/Rendr-logotype.png" width="395" height="100">
+</a>
 
 [![travis-ci status](https://secure.travis-ci.org/rendrjs/rendr.png)](http://travis-ci.org/#!/rendrjs/rendr/builds)
 [![Dependency Status](https://david-dm.org/rendrjs/rendr.png)](https://david-dm.org/rendrjs/rendr)
