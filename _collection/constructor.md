@@ -3,7 +3,7 @@ header: constructor
 example: new Collection([models], [options])
 ---
 
-The constructor creates a new instance of a Collection.  To customize your constructor, create an `initialize` function, which will be called by the constructor.
+The constructor creates a new instance of a Collection.  To customize your constructor, create an `initialize` function on the child class, this function will be invoked once the parents constructor method is completed. See [Backbone's documentation](http://backbonejs.org#Collection-constructor) for more information.
 
 The `models` parameter is an array of [*Models*](/model).
 
