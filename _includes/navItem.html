@@ -1,0 +1,9 @@
+<h3>
+  <a href="/{{include.name}}">{{include.title}}</a>
+</h3>
+
+<ul>
+  {% for doc in site[include.name] %}
+    <li><a href="/{{include.name}}#{{doc.header}}">{{doc.header}}</a></li>
+  {% endfor %}
+</ul>
