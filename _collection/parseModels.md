@@ -3,9 +3,9 @@ header: parseModels
 example: Collection.parseModels(response)
 ---
 
-Loops over each model in the collection's response.  Each model object will then be returned by the model's [parse](/model#parse) function.
+Loops over each Model in the Collection's response.  Each Model object will then be returned by the Model's [parse](/model#parse) function.
 
-If the `jsonKey` is set, Backbone can automatically parse models returned from an API that is formatted using the root keys.
+If the `jsonKey` is set, Backbone can automatically parse Models returned from an API that are formatted using the root keys.
 
 ```js
 // user model has jsonKey set to 'user'
