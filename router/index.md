@@ -5,7 +5,7 @@ title: "Router - RendrJS"
 
 # Router
 
-The **Router** is implemented to work very similarly to [Backbone.Router](http://backbonejs.org/#Router).  The difference is that Rendr helps decompose the functionality of a Backbone.Router.  It does this by adding a [routes.js](#routes.js) file and [Controllers](/controller).
+The **Router** is implemented to work very similarly to [Backbone.Router](http://backbonejs.org/#Router).  The difference is that Rendr helps deconstruct the functionality of a Backbone.Router by adding [Controllers](/controller)and a [routes.js](#routes.js) file.
 
 {% include pageDoc.html name="router" %}
 
