@@ -5,12 +5,12 @@ title: App - RendrJS
 
 # App
 
-The App is a specialized [Model](/model).  The app is the place where a lot of the choices between client / server happen. Here are some of the major features of the app:
+The App is a specialized [Model](/model).  A lot of the choices between client / server happen in the app. Here are some of its major features:
 
 - Defines the template adapter
 - Initializes the client / server [router](/router)
 - Initializes the [fetcher](/fetcher)
-- Initializes [modelUtils](/model-utils)
+- Initializes modelUtils
 - Initializes the app view, which in turn will initialize all views in use
 - [Starts](#start) the client-side [router](/router)
 - [Bootstraps the data](#bootstrapData) from the server into the client
