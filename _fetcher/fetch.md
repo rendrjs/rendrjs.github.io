@@ -3,7 +3,7 @@ header: fetch
 example: Fetcher.fetch(fetchSpec, [options], callback)
 ---
 
-`fetchSpec` is an object with the information to fetcher [Models](/model) or [Collections](/collection).
+Fetches [Models](/model) or [Collections](/collection) according to the parameters defined in the `fetchSpec` and populates the corresponding ModelStore and/or CollectionStore.
 
 Example `fetchSpec`:
 
@@ -28,16 +28,16 @@ Example `fetchSpec`:
 }
 ```
 
-This `fetchSpec` will get two models, the User and Character models, and one collection, the StarWarsCharacters collection.
+This `fetchSpec` will get two models (the User and Character models) and one collection (the StarWarsCharacters collection).
 
-Extra options to pass a `fetchSpec`:
+Extra options to pass to a `fetchSpec`:
 
 - *needsFetch* - Allows you to force a fetch request
 - *ensureKeys* - Ensures any stored data has all the required data, if not an API request will be made
 
-The `callback` function will be called with an `error` and `results` from the fetch.  The `error` argument will contain any errors when fetching data.  The `results` argument is an object of results from the API requests.  Each key is defined in the `fetchSpec` where the value is the response from the API.  For an example of what a callback function might look like, check out the [Contoller](/controller) documentation.
+The `callback` function will be called with an `error` and `results` from the fetch.  For an example callback function, check out the [Controller](/controller) documentation.
 
-`options` *optional* Allows you to set caching information.  The defaults for the options differ from client and server.  By default API responses are not written or read from the cache on the server, but both are true on the client.
+`options` *optional* Allows you to set caching information.  The defaults differ between client and server:  by default API responses are not written or read from the cache on the server, but both are true on the client.
 
 Example `options`:
 
@@ -50,4 +50,4 @@ var opts = {
 Fetcher.fetch(fetchSpec, opts, callback);
 ```
 
-The `fetch` function will make an AJAX request if `readFromCache` is false **or** if the data does not exist in the store.  By default on the client, the fetch request will check the corresponding store to see if the data exists, if it does no request is made and it simply returns the value in the store.  If the data isn't found it generates AJAX requests for each item defined in the `fetchSpec`.  **Note**: These AJAX requests are run in parallel.
+The `fetch` function will make an AJAX request if `readFromCache` is false **or** if the data does not exist in the ModelStore or CollectionStore.  If the data isn't found in the relevant store, it makes AJAX requests for each item defined in the `fetchSpec`.  **Note**:  These AJAX requests are run in parallel.
