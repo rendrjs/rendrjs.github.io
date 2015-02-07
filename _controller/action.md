@@ -15,4 +15,4 @@ module.exports = {
 };
 ```
 
-The example above will have add the `index` action to the `users_controller`.  To hookup the controller's action to a route simply add `addRoute('/users', 'users#index')` to the [app/routes.js](/router#routes.js) file.
+The example above will add the `index` action to the `users_controller`.  To connect the controller's action to a route, simply add `addRoute('/users', 'users#index')` to the [app/routes.js](/router#routes.js) file.
