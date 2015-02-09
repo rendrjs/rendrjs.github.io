@@ -22,6 +22,8 @@ collections:
     title: "View"
   controller:
     title: "Controller"
+  model-utils:
+    title: "Model Utils"
   router:
     title: "Router"
   syncer:
