@@ -1,9 +1,9 @@
 ---
 header: routes.js
-example: FILE `app/router.js`
+example: FILE `app/routes.js`
 ---
 
-The `routes.js` file stores the mapping between a URL route and the [controller action](/controller#action).
+This file stores the mapping between a URL route and a [controller action](/controller#action).
 
 Example `routes.js` file:
 
@@ -22,6 +22,6 @@ module.exports = function(addRoute) {
 
 The callback function takes 3 parameters:
 
-- The URL for the route, this can also be a regular expression to match
-- The controller [name](/controller#name) and the [action](/controller#action), 'controllerName#action'
+- The URL for the route, which can also be a regular expression
+- The controller [name](/controller#name) and [action](/controller#action), 'controllerName#action'
 - *optional* An object of options to pass to the router.  If the object contains a redirect, no controller information is required.

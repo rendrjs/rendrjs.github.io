@@ -5,14 +5,14 @@ title: Controller - RendrJS
 
 # Controller
 
-Controllers are an addition to Rendr that doesn't exist in Backbone. Controllers allow us to have a cleaner [router](/router).  Controllers define functions that the router will invoke when a URL is visited.  The functions that are invoked are called [actions](#action).
+Controllers are an addition to Rendr that do not exist in Backbone.  Controllers define functions (known as [actions](#action)) that the [router](/router) will invoke when a URL is visited.  This allows us to have a cleaner router.
 
-Controllers have no base class, as they are simply objects where the values are functions.  Simply create files in the `controllers/` directory of your application and follow the naming convention: `<name>_controller.js`.  The [name](#name) is how the router will know which file to open.  The keys of the object being exported are the [actions](#action) for a controller.
+Controllers have no base class, as they are simply objects containing functions.  Simply create files in the `controllers/` directory of your application and follow the naming convention: `<name>_controller.js`.  The [name](#name) is how the router will know which file to open.  The keys of the object being exported are the [actions](#action) for a controller.
 
 Example Controller:
 
 ```js
-// contollers/users_controller.js
+// controllers/users_controller.js
 module.exports = {
   index: function(params, callback) {
     var spec = {
@@ -44,9 +44,9 @@ module.exports = {
 };
 ```
 
-The above example creates a controller with two actions, `index` and `show`.  The `index` action will simply display all the users, and the `show` action will show a specific user, by their id.
+The above example creates a controller with two actions, `index` and `show`.  The `index` action will display all the users, and the `show` action will show a specific user by their id.
 
-The example's matching [routes.js](/router#routes.js) file:
+Example [routes.js](/router#routes.js) file:
 
 ```js
 module.exports = function(addRoute) {
@@ -55,7 +55,7 @@ module.exports = function(addRoute) {
 };
 ```
 
-Note how the `routes.js` file will match the controller's [name](#name) and the [action](#action)
+Note how the `routes.js` file will match the controller's [name](#name) and the [action](#action).
 
 {% include pageDoc.html name="controller" %}
 
