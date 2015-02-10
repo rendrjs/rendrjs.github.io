@@ -3,4 +3,4 @@ header: parentView
 example: View.parentView
 ---
 
-Stores a reference to the view that this exists in.  This will be `undefined` for the highest level view.
+Stores a reference to the view in which this view exists.  This will be `undefined` for the highest level view.
