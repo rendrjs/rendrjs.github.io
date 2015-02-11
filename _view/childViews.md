@@ -3,4 +3,4 @@ header: childViews
 example: View.childViews
 ---
 
-An array of the views that are children of the view.
+An array of subviews of the view.

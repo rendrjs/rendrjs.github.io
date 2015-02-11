@@ -20,4 +20,4 @@ view.getHtml();
 
 The Result: `'<a class="text-primary" data-additional-option="test">/* template */</a>'`
 
-This function is expected to only be used on the server.
+This function should only be used on the server.
