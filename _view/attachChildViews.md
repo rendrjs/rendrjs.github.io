@@ -3,4 +3,4 @@ header: attachChildViews
 example: View.attachChildViews()
 ---
 
-Removes all child views, then looks at all of the expected child views and attaches each view.
+Removes all of the view's current child views, then finds all instances of child views in the generated view HTML and calls `attach` on each child view.
