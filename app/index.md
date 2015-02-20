@@ -10,7 +10,7 @@ The App is a specialized [Model](/model).  A lot of the choices between client /
 - Defines the template adapter
 - Initializes the client / server [router](/router)
 - Initializes the [fetcher](/fetcher)
-- Initializes modelUtils
+- Initializes [modelUtils](/model-utils)
 - Initializes the app view, which in turn will initialize all views in use
 - [Starts](#start) the client-side [router](/router)
 - [Bootstraps the data](#bootstrapData) from the server into the client
