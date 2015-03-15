@@ -99,6 +99,9 @@
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 
+  .footer {
+    display: none;
+  }
 }
 
 @include media-query(875px) {
@@ -259,4 +262,27 @@
   a {
     font-weight: bold;
   }
+
 }
+
+@include media-query($on-palm) {
+  .navigation {
+    border-bottom: 1px solid #ccc;
+    border-right: 0;
+    position: inherit;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .page-content {
+    margin: 10px;
+    padding: 0px;
+  }
+
+  .site-footer {
+    display: none;
+  }
+}
+
