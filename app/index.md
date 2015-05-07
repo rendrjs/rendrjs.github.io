@@ -8,6 +8,7 @@ title: App - RendrJS
 The App is a specialized [Model](/model).  A lot of the choices between client / server happen in the app. Here are some of its major features:
 
 - Defines the template adapter
+- Defines the template engine
 - Initializes the client / server [router](/router)
 - Initializes the [fetcher](/fetcher)
 - Initializes [modelUtils](/model-utils)
