@@ -15,6 +15,7 @@ The options that can be passed into the Rendr App object.
 - **notFoundHandler** _optional_ Callback for [Express.js not found errors](http://expressjs.com/guide/error-handling.html)
 - **viewEngine** _optional_ Set a custom [Express.js ViewEngine](http://expressjs.com/api.html#app.engine)
 - **viewsPath** _optional_ Override where the views are stored. This path is relative to `entryPath`. Default value is: `app/views`
+- **baseLayoutName** _optional_ Set a custom name for the base template file of the app. For example `myLayout`. The default value is set to `__layout`.
 
 Example configuration:
 
@@ -38,4 +39,68 @@ var config = {
 };
 
 rendr.createServer(config);
+```
+
+### Template Adapters
+
+Provides a way for Rendr to utilize custom html template engines (see also Template Engines section below).  Rendr's [ViewEngine](https://github.com/rendrjs/rendr/blob/master/server/viewEngine.js) will delegate to the [Template Adapter](https://github.com/rendrjs/rendr-handlebars/blob/master/index.js). You can build your own to provide your template engine of choice (i.e. Jade, Underscore templates, etc).
+
+####Available Template Adapters
+
+- [rendr-handlebars](https://github.com/rendrjs/rendr-handlebars) - [Handlebars.js](https://github.com/wycats/handlebars.js) support.  This is the default adapter.
+
+- [rendr-emblem](https://github.com/modalstudios/rendr-emblem) - [Emblem.js](https://github.com/machty/emblem.js/) with [Handlebars.js](https://github.com/wycats/handlebars.js) fallback support.
+
+
+####Using Custom Adapters
+
+You can tell Rendr which Template Adapter to use.  This represents the node-module that contains the adapter.
+
+```js
+// /app/app.js
+
+module.exports = BaseApp.extend({
+  defaults: {
+    templateAdapter: 'rendr-emblem'
+  }
+
+});
+
+```
+
+### Template Engines
+
+While Template Adapters provide the layer of abstraction that allow you to use your favorite template engine in a Rendr app, the Template Engine option itself will tell the app which version to use exactly. 
+The default is set to be Handlebars, which is currently supported by the Rendr-handlebars adapter until version 2.0.0.
+**When setting up your Rendr app, you'll need to add your Template Engine of choice to package.json.**
+ 
+E.g.
+ 
+```js
+// /package.json
+
+"dependencies": {
+  ...
+  "express": "^4.12.0",
+  "handlebars": "^2.0.0"
+  "qs2": "~0.6.6",
+  ...
+},
+  
+```
+
+####Using Custom Template Engines
+
+You can tell Rendr which Template Engine to use.  This represents the node-module that contains the engine.
+
+```js
+// /app/app.js
+
+module.exports = BaseApp.extend({
+  defaults: {
+    templateEngine: 'handlebars'
+  }
+
+});
+
 ```
