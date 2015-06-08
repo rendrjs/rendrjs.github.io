@@ -20,8 +20,10 @@ dataAdapterConfig: {
 
 // collection
 module.exports = Base.extend({
-  api: 'github'
+  api: 'github',
+  url: '/test'
 });
+// URL result: https://api.github.com/test?<params for collection>
 ```
 
 If you don't provide an `api` it will automatically use the `default` key in the dataAdapterConfig.
