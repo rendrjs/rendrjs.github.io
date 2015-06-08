@@ -20,8 +20,10 @@ dataAdapterConfig: {
 
 // model
 module.exports = Base.extend({
-  api: 'github'
+  api: 'github',
+  url: '/test/:id'
 });
+// URL for fetch would be https://api.github.com/test/<id of the model>
 ```
 
 If you don't provide an `api` it will automatically use the `default` key in the dataAdapterConfig.
