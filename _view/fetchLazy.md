@@ -14,7 +14,7 @@ example: View.fetchLazy()
 View options for enabling lazy loading:
 
 - `lazy` - Set this to true to stop the server from trying to render the HTML server-side
-- `fetch_params` - An object of parameters to send to the API for the model or collection
+- `fetch_params` - An object of parameters to send to the API for the model or collection. In practice, you'll want to `JSON.stringify()` the parameters because of client / server differences.  This will automatically be parsed to JSON in the fetch request.
 - `model_name` - This is used to make the fetch request for a model with the given parameters
 - `collection_name` - If you're requesting a collection, this is the name of the collection for the view
 
